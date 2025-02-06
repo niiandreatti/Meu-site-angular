@@ -1,0 +1,81 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cinzel:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #00a2ff;
+  --background-color: #1a1a1a;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --text-color: #ffffff;
+  --text-secondary: #a0a0a0;
+  --card-hover: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+section {
+  padding: 100px 0;
+  position: relative;
+}
+
+.section-title {
+  font-family: 'Cinzel', serif;
+  font-size: 4rem;
+  margin-bottom: 60px;
+  color: var(--text-color);
+  position: relative;
+}
+
+.btn {
+  padding: 12px 30px;
+  border-radius: 25px;
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+.glow {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  filter: blur(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 3rem;
+  }
+}
